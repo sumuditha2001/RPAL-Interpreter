@@ -1,0 +1,59 @@
+//This file include some sample programs we used to test our implementation
+
+//(x+y where y=4) where x=3
+
+// Print (1,(2,3),4)
+
+//let f x y z = x+y+z in f 1 2 3
+
+//(fn x y z. x+y+z) 2 3 4
+
+//let c = 3 within f x = x+c in f 2
+
+//not - x + y / 3 > Z
+
+//let f x y = x+y in 3 @f y
+
+//let x=3 in let y=2 in x+y
+
+//(fn x.x-1) 4 * 2
+
+//(fn x.fn w.x+w) 5 6
+
+//(fn x.1+(fn w. -w)x)((fn z.2*z)7)
+
+//(fn n.n<0 -> -n | n)(-3)
+
+//( fn n.n<0-> -n|n)(-3)
+
+//(fn(x,y).x+y)(5,6)
+
+//let rec f n = n eq 1 -> 1| n* f(n-1) in f 3
+
+//let rec f n = n eq 1 -> 0 | n eq 2 -> 1 | f (n-1) + f (n-2) in
+//let rec fib n = n eq 0 -> nil | (fib (n-1) aug f (n)) in
+//Print ( fib 5 )
+
+//let T= (2,3) in let A = T aug 4 in Print(A)
+
+//let T = nil in let A= T aug 4 in Print (A)
+
+//let x=1 in let y=3 in -(-x+y)
+
+//let x = true in Print( x )
+
+//let x = true in let y = false in Print ( x & y)
+
+//let t = 1 in Print ( not t )
+
+//let t = 2 in let a = ' aa ' in Print ( t + a )
+
+// let t = ( 1,2 ) in Print ( t 1)
+
+//let t = dummy in Print ( t )
+
+let Sum(A) = Psum (A,Order A )
+where rec Psum (T,N) = N eq 0 -> 0
+ | Psum(T,N-1)+T N
+in Print ( Sum (1,2,3,4,5) )
+
